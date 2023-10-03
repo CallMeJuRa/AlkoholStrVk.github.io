@@ -5,12 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alkohol im Straßenverkehr</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="index.js">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="jquery.lettering.js"></script>
+    <script src="circletype.min.js "></script>
+    
+    
 </head>
 <body>
 
-   
-    </script>
+  
+
+  
+  
+    
     <header>
         
           <img src="Images/HomeBtn.png" onclick="window.location.href='index.html';" alt="" id="HomeBtn">
@@ -30,70 +37,49 @@
         </div>
       </header>
     
+
+    
 <div class="main">
-  <div class="row">
-    <div class="column">
-      <div class="sektion1">      
-        Sektion1
-
-
-
-        <button class="seemore">
-            See more
-        </button>
-      </div>
-    </div>
-
-        
-    <div class="column">
-        <div class="sektion2">      
-          Sektion2
-        </div>
-    </div>
-    <div class="column">
-      <div class="sektion3">      
-        Sektion3
-      </div>
   
-    </div>
+
+  <div class="circle" id="circle1">
+    
+    <div id="text">
+      Gesetzeslage  &#8226; Gesetzeslage &#8226;
+     </div>
+
+     
   </div>
-
-        <div class="row">
-          <div class="column">
-            <div class="sektion4">      
-              Sektion4
-            </div>
+  
 
 
-          </div>
-
-          <div class="column">
-            <div class="sektion5">      
-              Sektion5
-            </div>
+     
+ 
+  
 
 
-          </div>
-          <div class="column">
-            <div class="sektion6">      
-              Sektion6
-            </div>
-          </div>
-        </div>
-</div>
-
-       
-
+ 
       
        
       </div>
-
+     
 <footer>
   <div id="Bereich">
-        
+    <button class="seemore">
+      See more
+    </button>
+    
   </div>
 </footer>
 
-   
+<script>
+  new CircleType(document.getElementById('text'));
+</script>
+
+
+
 </body>
+
+
+
 </html>

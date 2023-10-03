@@ -144,76 +144,28 @@ nav {
 
 .main {
   width: 90%;
-  background-color: #6c00a7;
+  background-color: #f9f9f9;
   height: 62vh;
   margin-left: 5%;
   margin-top: 2.5%;
+  position: absolute;
   
 
   
 }
 
-.row {
+
+#circle1 {
+  background-image: url(Images/Paragraph.png) !important;
+ 
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 45%;
+  height: 31vh;  
+  width: 50;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
-  margin: 0;
-  padding: 0;
-}
-
-.sektion1 {    
-  height: 31vh;  
-  width: 50;
-  background-color: beige;    /*Jede Sektion kriegt win der Bearbeitung eine andere Fabre == leichter auseinander zu halten*/
-}
-
-.sektion2 {     
-  height: 31vh;  
-  width: 50;
-      
-  background-color: rgb(255, 255, 0);    
-}
-
-.sektion3 {     
-  height: 31vh;  
-  width: 50;
-       
-  background-color: rgb(68, 0, 255);    
-
-}
-
-
-.sektion4 {  
-  height: 31vh;  
-  width: 50;
-              
-  background-color: rgb(255, 0, 85);   
-
-}
-
-.sektion5 {    
-          
-  height: 31vh;  
-  width: 50;
-  background-color: rgb(51, 255, 0);    
-}
-
-.sektion6 {    
-  height: 31vh;  
-  width: 50;
-          
-  background-color: rgb(0, 0, 0); 
-
+  padding: -15em;
 }
 
 
@@ -227,6 +179,9 @@ nav {
   font-family: 'Dela Gothic One', cursive;
   font-size: larger;
     text-decoration: none;
+    justify-content: center;
+    align-items: end;
+    
   
 }
 
@@ -235,3 +190,67 @@ nav {
   color: #ff00d4;
   transition: all 0.3s ease 0s;
 }
+
+
+#alkoholrechner {
+  color: #f9f9f9;
+  
+}
+
+
+
+.circle {
+  width: 31vh;
+  height: 31vh;
+  background-color: #823ca6;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  border-color: #823ca6;
+  
+  animation: glowing 1s ease-in-out infinite alternate;
+  -moz-animation: glowing 1s ease-in-out infinite alternate;
+  animation: glowing 1s ease-in-out infinite alternate;
+
+  
+
+ 
+}
+@keyframes glowing {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #f0f, 0 0 40px #0ff, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
+
+
+#text {
+  font-family: 'Dela Gothic One', cursive;
+  color: #ffffff;
+  
+  
+  
+  
+  font-size: 3.5em;
+  animation: animate 10s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    transform:   rotate(360deg);
+  }
+  100% {
+    transform:   rotate(0deg);
+  }
+}
+
+
+#text:hover {
+  color: rgb(231, 226, 226);
+}
+
+
