@@ -234,7 +234,7 @@ nav {
   color: #ffffff;
   font-size: 2.6em;
   animation: animate 10s linear infinite;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
 }
 
 @keyframes animate {
