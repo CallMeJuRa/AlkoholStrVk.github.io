@@ -204,6 +204,7 @@ nav {
   justify-content: center;
   align-items: center;
   border-color: #823ca6;
+  left: 5vh;
   
   animation: glowing 1s ease-in-out infinite alternate;
   -webkit-animation: glowing 1s ease-in-out infinite alternate;
@@ -222,8 +223,16 @@ nav {
     box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
- 
 
+.circle:hover {
+  background-color: #713391 ;
+  transition: all 0.3s ease 0s;
+}
+ 
+.circle:hover #text {
+  color: rgb(231, 226, 226);
+
+}
  
 
 
@@ -233,8 +242,9 @@ nav {
   font-family: 'Dela Gothic One', cursive;
   color: #ffffff;
   font-size: 2.6em;
-  animation: animate 10s linear infinite;
-  letter-spacing: 0.3em;
+  animation: animate 20s linear infinite;
+  letter-spacing: 0.2vh;
+  position: fixed;
 }
 
 @keyframes animate {
@@ -251,4 +261,99 @@ nav {
   color: rgb(231, 226, 226);
 }
 
+#strafen {
+  font-family: 'Dela Gothic One', cursive;
+  color: #ffffff;
+  font-size: 3em;
+  animation: animate 20s linear infinite;
+  letter-spacing: 0.2vh;
+  position: fixed;
+}
+
+@keyframes animate {
+  0%{
+    transform:   rotate(360deg);
+  }
+  100% {
+    transform:   rotate(0deg);
+  }
+}
+
+
+#strafen:hover {
+  color: rgb(231, 226, 226);
+}
+
+#circle2 {
+  position: fixed;
+  left: 40vh;
+  background-image: url(Images/Gefägnis.png);
+  
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 45%;
+
+}
+
+#circle3 {
+  position: fixed;
+  left: 75vh;
+  top: 20vh;
+  background-image: url(Images/Ausland.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 75%;
+
+}
+
+#ausland {
+  font-family: 'Dela Gothic One', cursive;
+  color: #ffffff;
+  font-size: 4em;
+  animation: animate 20s linear infinite;
+  letter-spacing: 0.2vh;
+  position: fixed;
+}
+#circle4 {
+  position: fixed;
+  left: 110vh;
+  
+  background-image: url(Images/Uhr.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 75%;
+
+}
+
+#früher {
+  font-family: 'Dela Gothic One', cursive;
+  color: #ffffff;
+  font-size: 4em;
+  animation: animate 20s linear infinite;
+  letter-spacing: 0.2vh;
+  position: fixed;
+}
+
+#circle5 {
+  position: fixed;
+  left: 145vh;
+  top: 20vh;
+  background-image: url(Images/Formel.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 75%;
+
+}
+
+#rechner {
+  font-family: 'Dela Gothic One', cursive;
+  color: #ffffff;
+  font-size: 3em;
+  animation: animate 20s linear infinite;
+  letter-spacing: 0.2vh;
+  position: fixed;
+}
 

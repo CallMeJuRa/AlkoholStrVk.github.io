@@ -27,7 +27,7 @@
         
           <nav>
             <ul>
-              <li><a href="Seitenverwinklung/Gesetzteslage.html" class="navbtn">Gesetzeslage</a></li>      
+              <li><a href="Seitenverwinklung/Gesetzteslage.html" class="navbtn" >Gesetzeslage</a></li>      
               <li><a href="Seitenverwinklung/Strafen.html" class="navbtn">Strafen</a></li>
               <li><a href="Seitenverwinklung/Ausland.html" class="navbtn">Ausland</a></li>
               <li><a href="Seitenverwinklung/Früher.html" class="navbtn">Frühere Zeiten</a></li>
@@ -40,13 +40,36 @@
 
     
 <div class="main">
-  <div class="circle" id="circle1">
+  <div class="circle" id="circle1" onclick="Redirect(1)"> 
+    
     <div id="text">
       Gesetzeslage  &#8226; Gesetzeslage &#8226;
      </div>
   </div>
   
+  <div class="circle" id="circle2" onclick="Redirect(2)">
+    <div id="strafen">
+      Strafen  &#8226; Strafen &#8226;
+     </div>
+  </div>
 
+  <div class="circle" id="circle3" onclick="Redirect(3)">
+    <div id="ausland">
+      Ausland  &#8226; Ausland &#8226;
+     </div>
+  </div>
+
+  <div class="circle" id="circle4" onclick="Redirect(4)">
+    <div id="früher">
+      Früher  &#8226; Früher &#8226;
+     </div>
+  </div>
+
+  <div class="circle" id="circle5" onclick="Redirect(5)">
+    <div id="rechner">
+      Alkoholrechner  &#8226; Alkoholrechner &#8226;
+     </div>
+  </div>
 
      
  
@@ -68,6 +91,32 @@
 </footer>
 
 <script>
+  function Redirect(x) {
+    if (x === 1) {
+      window.location.assign("../Seitenverwinklung/Gesetzteslage.html");
+    }
+
+    if (x === 2) {
+      window.location.assign("../Seitenverwinklung/Strafen.html")
+    }
+
+    if (x === 3) {
+      window.location.assign("../Seitenverwinklung/Ausland.html")
+    }
+    if (x === 4) {
+      window.location.assign("../Seitenverwinklung/Früher.html")
+    }
+    if (x === 5) {
+      window.location.assign("../Seitenverwinklung/Früher.html")
+    }
+
+  }
+
+  new CircleType(document.getElementById('strafen'));
+  new CircleType(document.getElementById('ausland'));
+  new CircleType(document.getElementById('früher'));
+  new CircleType(document.getElementById('rechner'));
+
   new CircleType(document.getElementById('text'));
 </script>
 
