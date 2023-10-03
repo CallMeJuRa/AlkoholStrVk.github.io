@@ -3,9 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredoka:wght@700&family=Inter:wght@400;500&family=Noto+Serif&family=PT+Serif&family=Roboto+Mono:wght@600&family=The+Nautigal&display=swap');
 
 
-body { 
+body {    /* */
     background-color: #f9f9f9 !important;
     margin: 0;
     padding: 0%;
@@ -139,4 +140,98 @@ nav {
     height: 25vh;
     position: fixed;
     top: 85vh;
+}
+
+.main {
+  width: 90%;
+  background-color: #6c00a7;
+  height: 62vh;
+  margin-left: 5%;
+  margin-top: 2.5%;
+  
+
+  
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.sektion1 {    
+  height: 31vh;  
+  width: 50;
+  background-color: beige;    /*Jede Sektion kriegt win der Bearbeitung eine andere Fabre == leichter auseinander zu halten*/
+}
+
+.sektion2 {     
+  height: 31vh;  
+  width: 50;
+      
+  background-color: rgb(255, 255, 0);    
+}
+
+.sektion3 {     
+  height: 31vh;  
+  width: 50;
+       
+  background-color: rgb(68, 0, 255);    
+
+}
+
+
+.sektion4 {  
+  height: 31vh;  
+  width: 50;
+              
+  background-color: rgb(255, 0, 85);   
+
+}
+
+.sektion5 {    
+          
+  height: 31vh;  
+  width: 50;
+  background-color: rgb(51, 255, 0);    
+}
+
+.sektion6 {    
+  height: 31vh;  
+  width: 50;
+          
+  background-color: rgb(0, 0, 0); 
+
+}
+
+
+.seemore {
+  width: 12vh;
+  height: 3vh;
+  background-color: #a600ff;
+  color: #f9f9f9;
+  border-radius: 1vh;
+  border: 2;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: larger;
+    text-decoration: none;
+  
+}
+
+.seemore:hover {
+  background-color: #867b7b;
+  color: #ff00d4;
+  transition: all 0.3s ease 0s;
 }
