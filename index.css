@@ -164,8 +164,9 @@ nav {
   background-size: 45%;
   height: 31vh;  
   width: 50;
-  display: flex;
-  padding: -15em;
+  
+ 
+ 
 }
 
 
@@ -178,9 +179,7 @@ nav {
   border: 2;
   font-family: 'Dela Gothic One', cursive;
   font-size: larger;
-    text-decoration: none;
-    justify-content: center;
-    align-items: end;
+
     
   
 }
@@ -192,10 +191,7 @@ nav {
 }
 
 
-#alkoholrechner {
-  color: #f9f9f9;
-  
-}
+
 
 
 
@@ -207,10 +203,10 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  
   border-color: #823ca6;
   
   animation: glowing 1s ease-in-out infinite alternate;
+  -webkit-animation: glowing 1s ease-in-out infinite alternate;
   -moz-animation: glowing 1s ease-in-out infinite alternate;
   animation: glowing 1s ease-in-out infinite alternate;
 
@@ -226,17 +222,19 @@ nav {
     box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
+ 
+
+ 
+
+
 
 
 #text {
   font-family: 'Dela Gothic One', cursive;
   color: #ffffff;
-  
-  
-  
-  
-  font-size: 3.5em;
+  font-size: 2.6em;
   animation: animate 10s linear infinite;
+  letter-spacing: 0.3em;
 }
 
 @keyframes animate {
