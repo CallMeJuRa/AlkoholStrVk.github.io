@@ -315,6 +315,15 @@ nav {
   letter-spacing: 0.2vh;
   position: fixed;
 }
+@keyframes animate {
+  0%{
+    transform:   rotate(360deg);
+  }
+  100% {
+    transform:   rotate(0deg);
+  }
+}
+
 #circle4 {
   position: fixed;
   left: 110vh;
@@ -336,6 +345,15 @@ nav {
   position: fixed;
 }
 
+@keyframes animate {
+  0%{
+    transform:   rotate(360deg);
+  }
+  100% {
+    transform:   rotate(0deg);
+  }
+}
+
 #circle5 {
   position: fixed;
   left: 145vh;
@@ -355,5 +373,14 @@ nav {
   animation: animate 20s linear infinite;
   letter-spacing: 0.2vh;
   position: fixed;
+}
+
+@keyframes animate {
+  0%{
+    transform:   rotate(360deg);
+  }
+  100% {
+    transform:   rotate(0deg);
+  }
 }
 
