@@ -1,97 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alkohol im Straßenverkehr</title>
-    <link rel="stylesheet" href="index.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="jquery.lettering.js"></script>
-    <script src="circletype.min.js "></script>
-    
-    
-</head>
-<body>
+<html>
+    <head>
+      <link rel="stylesheet" href="background_styles.css">
+      <link rel="stylesheet" href="styles.css">
+      <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+      <script src="jquery.lettering.js"></script>
+      <script src="circletype.min.js "></script>
+      <title>Responsive Navbar</title>
 
-  
-
-  
-  
-    
-    <header>
-        
-          <img src="Images/HomeBtn.png" onclick="window.location.href='index.html';" alt="" id="HomeBtn">
-      
-        <div class="container">
-            
-        
-          <nav>
-            <ul>
-              <li><a href="Seitenverwinklung/Gesetzteslage.html" class="navbtn" >Gesetzeslage</a></li>      
-              <li><a href="Seitenverwinklung/Strafen.html" class="navbtn">Strafen</a></li>
-              <li><a href="Seitenverwinklung/Ausland.html" class="navbtn">Ausland</a></li>
-              <li><a href="Seitenverwinklung/Früher.html" class="navbtn">Frühere Zeiten</a></li>
-              <li><a href="Seitenverwinklung/Quellen.html" class="navbtn">Quellen</a></li>
-            </ul>
-          </nav>
+    </head>
+    <body>
+      <nav class="navbar">
+        <div class="brand-title"><img src="Images/HomeBtn.png" onclick="window.location.href='index.html';" alt="" id="HomeBtn"></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="#">Gesetzeslage</a></li>
+            <li><a href="#">Strafen</a></li>
+            <li><a href="#">Ausland</a></li>
+            <li><a href="#">Frühere Zeiten</a></li>
+            <li><a href="#">Quellen</a></li>
+          </ul>
         </div>
-      </header>
+      </nav>
+
+      <div class="circle" id="circle1" onclick="Redirect(1)"> 
     
-
-    
-<div class="main">
-  <div class="circle" id="circle1" onclick="Redirect(1)"> 
-    
-    <div id="text">
-      Gesetzeslage  &#8226; Gesetzeslage &#8226;
-     </div>
-  </div>
-  
-  <div class="circle" id="circle2" onclick="Redirect(2)">
-    <div id="strafen">
-      Strafen  &#8226; Strafen &#8226;
-     </div>
-  </div>
-
-  <div class="circle" id="circle3" onclick="Redirect(3)">
-    <div id="ausland">
-      Ausland  &#8226; Ausland &#8226;
-     </div>
-  </div>
-
-  <div class="circle" id="circle4" onclick="Redirect(4)">
-    <div id="früher">
-      Früher  &#8226; Früher &#8226;
-     </div>
-  </div>
-
-  <div class="circle" id="circle5" onclick="Redirect(5)">
-    <div id="rechner">
-      Alkoholrechner  &#8226; Alkoholrechner &#8226;
-     </div>
-  </div>
-
-     
- 
-  
-
-
- 
-      
-       
+        <div id="text">
+          Gesetzeslage  &#8226;   Gesetzeslage &#8226;
+         </div>
       </div>
-     
-<footer>
-  <div id="Bereich">
-    <button class="seemore">
-      See more
-    </button>
-    
-  </div>
-</footer>
 
-<script>
-  function Redirect(x) {
+      <div class="circle" id="circle2" onclick="Redirect(2)">
+        <div id="strafen">
+          Strafen  &#8226;  Strafen  &#8226;
+         </div>
+      </div>
+    
+      <div class="circle" id="circle3" onclick="Redirect(3)">
+        <div id="ausland">
+          Ausland  &#8226;  Ausland  &#8226;
+         </div>
+      </div>
+    
+      <div class="circle" id="circle4" onclick="Redirect(4)">
+        <div id="früher">
+          Früher  &#8226; Früher  &#8226;
+         </div>
+      </div>
+    
+      <div class="circle" id="circle5" onclick="Redirect(5)">
+        <div id="rechner">
+          Alkoholrechner  &#8226;  Alkoholrechner &#8226;
+         </div>
+      </div>
+    
+
+
+  
+     
+    
+      <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+    toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+        })
+
+        function Redirect(x) {
     if (x === 1) {
       window.location.assign("../Seitenverwinklung/Gesetzteslage.html");
     }
@@ -111,19 +92,15 @@
     }
 
   }
-
-  new CircleType(document.getElementById('strafen'));
+ 
+    new CircleType(document.getElementById('text'));
+    new CircleType(document.getElementById('strafen'));
   new CircleType(document.getElementById('ausland'));
   new CircleType(document.getElementById('früher'));
   new CircleType(document.getElementById('rechner'));
 
-  new CircleType(document.getElementById('text'));
-</script>
 
 
-
-</body>
-
-
-
+      </script>
+    </body>
 </html>

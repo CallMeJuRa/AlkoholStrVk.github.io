@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+
+
+body { 
+    background-color: #f9f9f9 !important;
+    margin: 0;
+    padding: 0%;
+    
+}
+
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+
+}
+
+
+#HomeBtn {
+  transition: all 0.3s ease 0s;
+}
+
+#HomeBtn:hover {
+  border-radius: 1vh;
+  
+  filter: invert(1);
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    background-color: #A600FF;
+    position: sticky;
+    width: 100%;
+
+}
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+.navbtn {
+    
+    font-family: 'Noto Serif', serif;
+    font-weight: 400;
+    font-size: 2.3vh;
+    border-width: 1vh;
+    border-right: 1vh;
+    border-radius: 2vh;
+    border-style: unset;
+    
+
+    color: black;
+    transition: all 0.3s ease 0s;
+  
+}
+
+
+
+.navbtn:hover  {
+    border-color: black;
+    background-color: #6c00a7;
+    color: white;
+    
+}
+
+
+
+
+.nav__links {
+    list-style: none;
+
+}
+
+nav {
+    float: right;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+  
+    position: relative;
+  }
+  
+  nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    text-transform: uppercase;
+   
+  }
+  
+  
+  
+  nav a::before {
+    content: '';
+    display: block;
+    height: 0.5vh;
+    background-color: rgb(0, 0, 0);
+  
+    position: absolute;
+    top: 0;
+    width: 0%;
+  
+    transition: all ease-in-out 250ms;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+  }
+  
+
+.HomeIcon {
+    
+    width: 5vh;
+}
+
+
+#Bereich {
+    width: 100%;
+    color: whitesmoke;
+    background-color: black;
+    height: 25vh;
+    position: fixed;
+    top: 85vh;
+}

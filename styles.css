@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredoka:wght@700&family=Inter:wght@400;500&family=Noto+Serif&family=PT+Serif&family=Roboto+Mono:wght@600&family=The+Nautigal&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A600FF;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-size: 2vh;
+    
+}
+
+.navbar-links li:hover {
+    background-color: #9500e6;
+}
+
+.toggle-button {
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#HomeBtn {
+    size-adjust: auto;
+    width: 7vh;
+        transition: all 0.3s ease 0s;
+        border: 0;
+}
+#HomeBtn:hover {
+        border-radius: 1vh;
+        
+        filter: invert(1);
+      }
+
+      #circle1 {
+        background-image: url(Images/Paragraph.png) !important;
+        
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 45%;
+        height: 31vh;  
+        width: 50;
+        position: relative;
+        top: 5vh;
+       
+       
+      }
+
+      .circle {
+        width: 31vh;
+        height: 31vh;
+        background-color: #823ca6;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-color: #000000;
+        left: 5vh;
+       border: 2vh;
+        -webkit-box-shadow:0px 0px 75px 25px rgba(170,0,255,1);
+-moz-box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
+box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
+        
+      }
+
+      .circle:hover {
+        background-color: #713391 ;
+        transition: all 0.3s ease 0s;
+      }
+       
+      .circle:hover #text {
+        color: rgb(231, 226, 226);
+      
+      }
+      #text {
+        font-family: 'Dela Gothic One', cursive;
+        color: #ffffff;
+        font-size: 2.6em;
+        animation: animate 20s linear infinite;
+        letter-spacing: 0.2vh;
+        position: sticky;
+
+        
+      }
+
+      @keyframes animate {
+        0%{
+          transform:   rotate(360deg);
+        }
+        100% {
+          transform:   rotate(0deg);
+        }
+      }
+
+      #text:hover {
+        color: rgb(231, 226, 226);
+      }
+      
+      #strafen {
+        font-family: 'Dela Gothic One', cursive;
+        color: #ffffff;
+        font-size: 3em;
+        animation: animate 20s linear infinite;
+        letter-spacing: 0.2vh;
+        position: fixed;
+      }
+      
+      @keyframes animate {
+        0%{
+          transform:   rotate(360deg);
+        }
+        100% {
+          transform:   rotate(0deg);
+        }
+      }
+      
+      
+      #strafen:hover {
+        color: rgb(231, 226, 226);
+      }
+      
+      #circle2 {
+        position: fixed;
+        left: 40vh;
+        background-image: url(Images/Gefägnis.png);
+        
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 45%;
+      
+      }
+      
+      #circle3 {
+        position: fixed;
+        left: 75vh;
+        top: 20vh;
+        background-image: url(Images/Ausland.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 75%;
+      
+      }
+      
+      #ausland {
+        font-family: 'Dela Gothic One', cursive;
+        color: #ffffff;
+        font-size: 4em;
+        animation: animate 20s linear infinite;
+        letter-spacing: 0.2vh;
+        position: fixed;
+      }
+      @keyframes animate {
+        0%{
+          transform:   rotate(360deg);
+        }
+        100% {
+          transform:   rotate(0deg);
+        }
+      }
+      
+      #circle4 {
+        position: fixed;
+        left: 110vh;
+        
+        background-image: url(Images/Uhr.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 75%;
+      
+      }
+      
+      #früher {
+        font-family: 'Dela Gothic One', cursive;
+        color: #ffffff;
+        font-size: 4em;
+        animation: animate 20s linear infinite;
+        letter-spacing: 0.2vh;
+        position: fixed;
+      }
+      
+      @keyframes animate {
+        0%{
+          transform:   rotate(360deg);
+        }
+        100% {
+          transform:   rotate(0deg);
+        }
+      }
+      
+      #circle5 {
+        position: fixed;
+        left: 145vh;
+        top: 20vh;
+        background-image: url(Images/Formel.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y: center;
+        background-size: 75%;
+      
+      }
+      
+      #rechner {
+        font-family: 'Dela Gothic One', cursive;
+        color: #ffffff;
+        font-size: 3em;
+        animation: animate 20s linear infinite;
+        letter-spacing: 0.2vh;
+        position: fixed;
+      }
+      
+      @keyframes animate {
+        0%{
+          transform:   rotate(360deg);
+        }
+        100% {
+          transform:   rotate(0deg);
+        }
+      }
+     
+
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+}
+
+
+
