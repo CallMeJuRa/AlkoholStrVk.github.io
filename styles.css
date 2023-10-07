@@ -59,7 +59,7 @@ body {
 
 .toggle-button {
     position: absolute;
-    top: .75rem;
+    top: 1vh;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -94,7 +94,7 @@ body {
         background-position-x: center;
         background-position-y: center;
         background-size: 45%;
-        height: 31vh;  
+         
         width: 50;
         position: relative;
         top: 5vh;
@@ -276,7 +276,17 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
       }
      
 
-@media (max-width: 800px) {
+
+      footer {
+        width: 100%;
+        background-color: #333;
+        height: 5vh;
+        position: relative;
+        top: 55.3vh;
+
+      }
+
+@media (max-width: 1000px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -307,7 +317,93 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
     .navbar-links.active {
         display: flex;
     }
+    .circle {
+        width: 15vh;
+        height: 15vh;
+        background-color: #823ca6;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-color: #000000;
+        left: 5vh;
+       border: 2vh;
+        -webkit-box-shadow:0px 0px 75px 25px rgba(170,0,255,1);
+-moz-box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
+box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);      
+
+}
+#rechner {
+  font-size: 1em;
+  position: relative;
+}  #früher  {
+  font-size: 1em;
+  position: relative;
+}
+#ausland {
+  font-size: 1em;
+  position: relative;
+}
+ #strafen {
+  font-size: 1em;
+  position: relative;
+ }
+ #text {
+  font-size: 1em;
+  position: relative;
 }
 
+#circle2 {
+  position: relative;
+  left: 30vh;
+  background-image: url(Images/Gefägnis.png);
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 45%;
+}
 
+#circle3 {
 
+  position: relative;
+  left: 5vh;
+  top: 1vh;
+  background-image: url(Images/Ausland.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 75%;
+}
+
+#circle4 {
+  position: relative;
+  left: 30vh;
+  top: 1vh;
+  background-image: url(Images/Uhr.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 75%;
+
+}
+
+#circle5 {
+  position: relative;
+  left: 5vh;
+  top: 1vh;
+  background-image: url(Images/Formel.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  background-size: 75%;
+
+}
+
+footer {
+  width: 100%;
+  background-color: #333;
+  height: 2vh;
+  position: relative;
+ 
+}
+
+}
