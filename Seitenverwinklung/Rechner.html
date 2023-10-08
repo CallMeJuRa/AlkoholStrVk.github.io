@@ -34,6 +34,8 @@
       <label for="m">Geschlecht: </label>
       <input type="radio" id="m" name="geschlecht" value=".8"> <input type="radio" id="w" name="geschlecht" value=".7">
     </form>
+
+    <p id="ergebnis">Ergebnis: ___&#8240</p>
   </div>
   <div id="box" onclick="return calcBAC(alkoholEinnahme, körpergewicht)">Berechnen</div>
 
@@ -58,7 +60,7 @@
       return false
     }
 
-    for (var i = 0; i < geslcht.length; i++) {
+    for (var i = 0; i < gender.length; i++) {
       if (gender[i].checked) {
         mod = gender[i].value
         checkedGender = true
@@ -71,6 +73,7 @@
       return false
     }
     var calc = konz.value / (gewicht.value * mod) // formel für BAK (Blutalkoholkonzentration)
+    document.getElementById("ergebnis").innerHTML = "Ergebnis: "+String(Math.round(calc*100)/100)+"&#8240"
     return calc
   }
 </script>
