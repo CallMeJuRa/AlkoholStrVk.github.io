@@ -8,32 +8,28 @@
   <link rel="stylesheet" href="Stylesheets/Rechner.css">
 </head>
 <body>
-    <body>
-        <nav class="navbar">
-          <div class="brand-title"><img src="/Images/HomeBtn.png" onclick="window.location.href='../index.html';" alt="" id="HomeBtn"></div>
-          <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </a>
-          <div class="navbar-links">
-            <ul>
-              <li><a href="/Seitenverwinklung/Gesetzteslage.html">Gesetzeslage</a></li>
-              <li><a href="/Seitenverwinklung/Strafen.html">Strafen</a></li>
-              <li><a href="/Seitenverwinklung/Ausland.html">Ausland</a></li>
-              <li><a href="/Seitenverwinklung/Früher.html">Frühere Zeiten</a></li>
-              <li><a href="/Seitenverwinklung/Quellen.html">Quellen</a></li>
-            </ul>
-          </div>
-        </nav>
-  
+  <header>
+    <img src="/Images/HomeBtn.png" onclick="window.location.href='../index.html';" alt="" id="HomeBtn">
+    <!-- ../ Muss benutzt werden, da Index.html in nem anderen Ordner ist.-->
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="Gesetzteslage.html" class="navbtn">Gesetzeslage</a></li>
+          <li><a href="Strafen.html" class="navbtn">Strafen</a></li>
+          <li><a href="Ausland.html" class="navbtn">Ausland</a></li>
+          <li><a href="Früher.html" class="navbtn">Frühere Zeiten</a></li>
+          <li><a href="Quellen.html" class="navbtn">Quellen</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
   <div class="calc">
     <p><b>Gebe Daten an</b></p>
     <form>
       <label for="alkoholEinnahme">Einnahme von Alkohol in Gramm: </label>
       <input type="number" id="alkoholEinnahme" name="alkoholEinnahme"> <br>
-      <label for="körpergewicht">Körpergewicht (in KG):</label>
+      <label for="körpergewicht">Körpergewicht:</label>
       <input type="number" id="körpergewicht" name="körpergewicht"> <br>
       <label for="m">Geschlecht (m/w): </label>
       <input type="radio" id="m" name="geschlecht" value=".8"> <input type="radio" id="w" name="geschlecht" value=".7">
@@ -80,13 +76,5 @@
     document.getElementById("ergebnis").innerHTML = "Ergebnis: "+String(Math.round(calc*100)/100)+"&#8240"
     return calc
   }
-
-
-  const toggleButton = document.getElementsByClassName('toggle-button')[0]
-    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
-
-  toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-        })
 </script>
 </html>
