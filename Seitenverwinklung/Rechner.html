@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alkohol im Straßenverkehr</title>
+  <link rel="script" href="Script/Rechner.js">
+  <link rel="stylesheet" href="Stylesheets/Rechner.css">
+</head>
+<body>
+    <body>
+        <nav class="navbar">
+          <div class="brand-title"><img src="/Images/HomeBtn.png" onclick="window.location.href='../index.html';" alt="" id="HomeBtn"></div>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+          <div class="navbar-links">
+            <ul>
+              <li><a href="/Seitenverwinklung/Gesetzteslage.html">Gesetzeslage</a></li>
+              <li><a href="/Seitenverwinklung/Strafen.html">Strafen</a></li>
+              <li><a href="/Seitenverwinklung/Ausland.html">Ausland</a></li>
+              <li><a href="/Seitenverwinklung/Früher.html">Frühere Zeiten</a></li>
+              <li><a href="/Seitenverwinklung/Quellen.html">Quellen</a></li>
+            </ul>
+          </div>
+        </nav>
+  
+
+  <div class="calc">
+    <p><b>Gebe Daten an</b></p>
+    <form>
+      <label for="alkoholEinnahme">Einnahme von Alkohol in Gramm: </label>
+      <input type="number" id="alkoholEinnahme" name="alkoholEinnahme"> <br>
+      <label for="körpergewicht">Körpergewicht (in KG):</label>
+      <input type="number" id="körpergewicht" name="körpergewicht"> <br>
+      <label for="m">Geschlecht (m/w): </label>
+      <input type="radio" id="m" name="geschlecht" value=".8"> <input type="radio" id="w" name="geschlecht" value=".7">
+    </form>
+
+    <p id="ergebnis">Ergebnis: ___&#8240</p>
+  </div>
+  <div id="box" onclick="return calcBAC(alkoholEinnahme, körpergewicht)">Berechnen</div>
+
+  <footer>
+    <div id="Bereich">
+  
+    </div>
+  </footer>
+</body>
+<script>
+  function calcBAC(konz, gewicht) {
+    var mod = 0
+    var checkedGender = false
+    var gender = document.getElementsByName("geschlecht")
+
+    if (konz.value == "") {
+      alert("Bitte geben Sie die Einnahme von Alkohol in Gramm an.")
+      return false
+    }
+    if (gewicht.value == "") {
+      alert("Bitte geben Sie den Körpergewicht in Kilogramm an.")
+      return false
+    }
+
+    for (var i = 0; i < gender.length; i++) {
+      if (gender[i].checked) {
+        mod = gender[i].value
+        checkedGender = true
+        break
+      }
+    }
+
+    if (!checkedGender) { // checkedGender == false
+      alert("Bitte geben Sie das Geschlecht an.")
+      return false
+    }
+    var calc = konz.value / (gewicht.value * mod) // formel für BAK (Blutalkoholkonzentration)
+    document.getElementById("ergebnis").innerHTML = "Ergebnis: "+String(Math.round(calc*100)/100)+"&#8240"
+    return calc
+  }
+
+
+  const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+  toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+        })
+</script>
+</html>
