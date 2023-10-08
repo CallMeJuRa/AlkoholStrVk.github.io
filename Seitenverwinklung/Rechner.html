@@ -27,7 +27,7 @@
   <div class="calc">
     <p><b>Gebe Daten an</b></p>
     <form>
-      <label for="alkoholZunahme">Einnahme von Alkohol in Gramm: </label>
+      <label for="alkoholEinnahme">Einnahme von Alkohol in Gramm: </label>
       <input type="number" id="alkoholZunahme" name="alkoholZunahme"> <br>
       <label for="körpergewicht">Körpergewicht:</label>
       <input type="number" id="körpergewicht" name="körpergewicht"> <br>
@@ -35,7 +35,7 @@
       <input type="radio" id="m" name="geschlecht" value=".8"> <input type="radio" id="w" name="geschlecht" value=".7">
     </form>
   </div>
-  <div id="box" onclick="return calcBAC(alkoholZunahme, körpergewicht)">Berechnen</div>
+  <div id="box" onclick="return calcBAC(alkoholEinnahme, körpergewicht)">Berechnen</div>
 
   <footer>
     <div id="Bereich">
@@ -50,7 +50,7 @@
     var gender = document.getElementsByName("geschlecht")
 
     if (konz.value == "") {
-      alert("Bitte geben Sie die Zunahme von Alkohol in Gramm an.")
+      alert("Bitte geben Sie die Einnahme von Alkohol in Gramm an.")
       return false
     }
     if (gewicht.value == "") {
