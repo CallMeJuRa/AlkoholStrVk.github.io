@@ -1,44 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alkohol im Straßenverkehr</title>
-    <link rel="stylesheet" href="Stylesheets/Früher.css">
-    <link rel="script" href="Script/Früher.js">
-</head>
-<body>
-
-   
-    </script>
-    <header>
-        
-          <img src="/Images/HomeBtn.png" onclick="window.location.href='../index.html';" alt="" id="HomeBtn"> <!-- ../ Muss benutzt werden, da Index.html in nem anderen Ordner ist.-->
-      
-        <div class="container">
-            
-        
-          <nav>
-            <ul>
-              <li><a href="Gesetzteslage.html" class="navbtn">Gesetzeslage</a></li>
-              <li><a href="Strafen.html" class="navbtn">Strafen</a></li>
-              <li><a href="Ausland.html" class="navbtn">Ausland</a></li>
-              <li><a href="Früher.html" class="navbtn">Frühere Zeiten</a></li>
-              <li><a href="Quellen.html" class="navbtn">Quellen</a></li>
-            </ul>
-          </nav>
+<html>
+    <head>
+      <link rel="stylesheet" href="Stylesheets/Früher.css">
+      <title>Alkohol im Straßenverkehr</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+      <nav class="navbar">
+        <div class="brand-title"><img src="/Images/HomeBtn.png" onclick="window.location.href='../index.html';" alt="" id="HomeBtn"></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="/Seitenverwinklung/Gesetzteslage.html">Gesetzeslage</a></li>
+            <li><a href="/Seitenverwinklung/Strafen.html">Strafen</a></li>
+            <li><a href="/Seitenverwinklung/Ausland.html">Ausland</a></li>
+            <li><a href="/Seitenverwinklung/Früher.html">Frühere Zeiten</a></li>
+            <li><a href="/Seitenverwinklung/Quellen.html">Quellen</a></li>
+          </ul>
         </div>
-      </header>
+      </nav>
+
     
 
 
+  
+     <footer>
+
+     </footer>
+    
+      <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+  toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+        })
 
 
-      <footer>
-        <div id="Bereich">
-              
-        </div>
-      </footer>
-      
-</body>
+      </script>
+    </body>
 </html>

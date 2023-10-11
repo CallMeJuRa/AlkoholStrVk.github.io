@@ -1,44 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alkohol im Straßenverkehr</title>
-    <link rel="stylesheet" href="Stylesheets/Gesetzeslage.css">
-    <link rel="script" href="Script/Gesetzeslage.js">
-</head>
-<body>
+<html>
+    <head>
+      <link rel="stylesheet" href="Stylesheets/Gesetzeslage.css">
+      <title>Alkohol im Straßenverkehr</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+      <nav class="navbar">
+        <div class="brand-title"><img src="/Images/HomeBtn.png" onclick="window.location.href='../index.html';" alt="" id="HomeBtn"></div>
+        <a href="#" class="toggle-button">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </a>
+        <div class="navbar-links">
+          <ul>
+            <li><a href="/Seitenverwinklung/Gesetzteslage.html">Gesetzeslage</a></li>
+            <li><a href="/Seitenverwinklung/Strafen.html">Strafen</a></li>
+            <li><a href="/Seitenverwinklung/Ausland.html">Ausland</a></li>
+            <li><a href="/Seitenverwinklung/Früher.html">Frühere Zeiten</a></li>
+            <li><a href="/Seitenverwinklung/Quellen.html">Quellen</a></li>
+          </ul>
+        </div>
+      </nav>
 
-   
-    </script>
-    <header>
-        
-          <img src="/Images/HomeBtn.png" onclick="window.location.href='../index.html';" alt="" id="HomeBtn"> <!-- ../ Muss benutzt werden, da Index.html in nem anderen Ordner ist.-->
-      
-        <div class="container">
+    <div class="main">
+      <div class="part" id="part1">
+        <h1>§ 316 Trunkenheit im Verkehr</h1>
+          <div class="txt">
+            &#8226; Personen die keinen Sach- oder Personenschaden verrichten, während diese im Genuss eines rauschendes Mittels (Alkohol), erhalten eine Freiheitsstrafe von einem Jahr oder eine Geldstrafe
             
-        
-          <nav>
-            <ul>
-              <li><a href="Gesetzteslage.html" class="navbtn">Gesetzeslage</a></li>
-              <li><a href="Strafen.html" class="navbtn">Strafen</a></li>
-              <li><a href="Ausland.html" class="navbtn">Ausland</a></li>
-              <li><a href="Früher.html" class="navbtn">Frühere Zeiten</a></li>
-              <li><a href="Quellen.html" class="navbtn">Quellen</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+            
+          </div>
+             </div>
+
+      <div class="part" id="part2">
+        <h2>§24stVG - 0,5 Promille-Grenze</h2>
+        <div class="txt">
+          &#8226; (1): Es handelt sich um eine Ordnungswidrigkeit, wenn eine Person im Straßenverkehr ein Kraftfahrzeug führt, obwohl er 0,25 mg/l Alkohol in der Atemluft, bzw. 0,5 Promille im Blut führt
+        <br>  &#8226; (2): Einnahme eines Arzeneimittels im Falle eines konkreten Krankheitsfall negiert Absatz 1.
+        <br>  &#8226; (3): Fahrlässige Taten sind ebenso Ordnungswidrig.
+        <br>&#8226; (4):  Diese Ordnungswidrigkeiten können mit einer <a href="Strafen.html"> Geldstrafe von 3000€</a> geahndet werden.
+          <br>&#8226; (5): Sofern es für die Sicherheit des Straßenverkehrs erforderlich ist, besteht das Recht für das <a href="https://bmdv.bund.de/DE/Home/home.html">Bundesministerium für Verkehr und digtiale Infrastruktur</a>, die Liste der Rauschmittel zu ändern.
+      </div>
+      </div>
+
+      <div class="part" id="part3">
+          <h1>Fahruntüchtigkeit</h1>
+          <div class="txt">
+            &#8226; Man unterscheidet zwischen relativen Fahruntüchtigkeit und absoluter Fahruntüchtigkeit
+            <br>  &#8226; relativ Fahruntüchtigkeit: Blutalkoholkonzentration von 0,3 bis 1.05 MIT Ausfallerscheinungen.
+            <br>  &#9658; Ausfallerscheinungen: Schlangenlinien fahren, lallen, torkeln, verkehrsuntypische Fahrweisen 
+            <br>  &#8226; absolute Fahruntüchtigkeit: Blutalkoholkonzentration ab 1.1 Promille (absolut)
+
+          </div>
+      </div>
+    </div>
+     <footer>
+
+     </footer>
     
+      <script>
+        const toggleButton = document.getElementsByClassName('toggle-button')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+  toggleButton.addEventListener('click', () => {
+  navbarLinks.classList.toggle('active')
+        })
 
 
-
-
-      <footer>
-        <div id="Bereich">
-              
-        </div>
-      </footer>
-      
-</body>
+      </script>
+    </body>
 </html>
