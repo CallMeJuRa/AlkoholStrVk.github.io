@@ -90,7 +90,7 @@ body {
      
       .main {
         width: 85%;
-        height: 75%;
+        height: 40%;
         background-color: #333;
         position: absolute;
         top: 15vh;
@@ -103,20 +103,27 @@ body {
         .part {
             width: 33.3333%;
             height: 100%;
-    
-        }
-        #part1 {
-            background-color: black;
-        }
-    
-        #part2 {
-            background-color: aqua;
-        }
-        #part3 {
-            background-color: firebrick;
+            outline: 3px solid purple;
             
+            
+           
         }
-    
+        
+    h1 {
+       position: relative;
+       top: 0;
+       left: 25%;
+       font-size: 2.25rem;
+    }
+    .txt {
+        padding-left: 1vh;
+        margin: 0;
+       font-size: 1.4rem;
+    }
+
+    .link {
+        color: #A600FF;
+    }
        
 
 
@@ -125,8 +132,8 @@ body {
         background-color: #333;
         height: 5vh;
         position: absolute;
-        top: 100vh;
-
+        bottom: 0;
+        
       }
 
 @media (max-width: 1000px) {
