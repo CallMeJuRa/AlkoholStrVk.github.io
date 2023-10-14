@@ -431,7 +431,10 @@ footer {
 
 }
 
-@media (max-width: 1500px) {
+@media all and (min-width: 1000px) and (max-width: 1500px){ 
+
+
+
   .circle {
     width: 24vh;
     height: 24vh;

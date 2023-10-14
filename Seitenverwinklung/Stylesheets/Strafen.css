@@ -238,7 +238,7 @@ footer {
 
 }
 
-@media (max-width: 1500px) { 
+@media all and (min-width: 1000px) and (max-width: 1500px){ 
     .main {
         width: 85%;
         height: 65%;
