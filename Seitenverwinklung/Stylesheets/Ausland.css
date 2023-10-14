@@ -50,7 +50,7 @@ body {
     color: white;
     padding: 1rem;
     font-size: 2vh;
-    
+
 }
 
 .navbar-links li:hover {
@@ -78,42 +78,81 @@ body {
 #HomeBtn {
     size-adjust: auto;
     width: 7vh;
-        transition: all 0.3s ease 0s;
-        border: 0;
+    transition: all 0.3s ease 0s;
+    border: 0;
 }
+
 #HomeBtn:hover {
-        border-radius: 1vh;
-        
-        filter: invert(1);
-      }
-   
-     
+    border-radius: 1vh;
+
+    filter: invert(1);
+}
 
 
-      footer {
-        width: 100%;
-        background-color: #333;
-        height: 5vh;
-        position: relative;
-        top: 88vh;
-        display: flex;
-
-      }
-
-
-      .darkmodebtn {
-        width: 3.5vh;
-        align-items: center;
-      }
+.main {
+    width: 85%;
+    height: 40%;
+    background-color: #333;
+    position: absolute;
+    top: 15vh;
+    left: 15vh;
+    display: flex;
+    color: aliceblue;
+}
 
 
-      .darkmodebtn:hover {
-        filter: invert(1);
-      }
+.part {
+    width: 100%;
+    height: 100%;
+    outline: 3px solid purple;
 
-      .darkmode {
-        background-color: #eee;
-      }
+
+
+}
+
+h1 {
+    position: relative;
+    top: 0;
+    left: 25%;
+    font-size: 2.25rem;
+}
+
+.txt {
+    padding-left: 1vh;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.link {
+    color: #ff00ff;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: #333;
+    height: 5vh;
+    position: relative;
+    top: 88vh;
+    display: flex;
+
+}
+
+
+.darkmodebtn {
+    width: 3.5vh;
+    align-items: center;
+}
+
+
+.darkmodebtn:hover {
+    filter: invert(1);
+}
+
+.darkmode {
+    background-color: #eee;
+}
 
 @media (max-width: 1000px) {
     .navbar {
@@ -146,15 +185,116 @@ body {
     .navbar-links.active {
         display: flex;
     }
-    
-footer {
-  width: 100%;
-  background-color: #333;
-  height: 3vh;
-  position: absolute;
- 
+
+    .main {
+        width: 75%;
+        height: 50%;
+        background-color: #333;
+        position: absolute;
+        top: 5vh;
+        left: 2.5vh;
+        display: block;
+        color: aliceblue;
+    }
+
+
+    .part {
+        size: absolute;
+        width: 100%;
+        height: 33.33%;
+        outline: 3px solid purple;
+        padding: 1vh;
+        line-height: 1.1rem;
+
+    }
+
+    h1 {
+        position: relative;
+        top: 0;
+        left: 5%;
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+
+    .txt {
+        padding-left: 1vh;
+        margin: 0;
+        font-size: 1rem;
+
+    }
+
+    footer {
+        width: 100%;
+        background-color: #333;
+        height: 2vh;
+        position: absolute;
+        top: 120vh;
+
+    }
+
+    .main {
+
+        position: relative;
+
+
+
+
+
+
+    }
 }
-.darkmodebtn {
-    height: 1rem;
+
+@media all and (min-width: 1000px) and (max-width: 1500px) {
+    .main {
+        width: 85%;
+        height: 65%;
+        background-color: #333;
+        position: absolute;
+        top: 15vh;
+        left: 15vh;
+        display: flex;
+        color: aliceblue;
+    }
+
+
+    .part {
+        width: 33.3333%;
+        height: 100%;
+        outline: 3px solid purple;
+
+
+
+    }
+
+    h1 {
+        position: relative;
+
+        left: 4%;
+        font-size: 1.5rem;
+    }
+
+    .txt {
+        padding-left: 1vh;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    footer {
+        width: 100%;
+        background-color: #333;
+        height: 5vh;
+        position: relative;
+        top: 87vh;
+        display: flex;
+    }
 }
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        background: #222222;
+    }
+
+
 }
