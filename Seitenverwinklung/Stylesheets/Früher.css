@@ -12,7 +12,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #222222;
 }
 
 .navbar {
@@ -112,7 +112,7 @@ body {
       }
 
       .darkmode {
-        background-color: #222222;
+        background-color: #eee;
       }
 
 @media (max-width: 1000px) {

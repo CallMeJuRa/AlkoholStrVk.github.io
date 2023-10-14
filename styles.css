@@ -12,7 +12,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #eee;
+    background-color: #222222;
 }
 
 .navbar {
@@ -304,7 +304,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
       }
 
       .darkmode {
-        background-color: #222222;
+        background-color: #eee;
       }
 
 @media (max-width: 1000px) {

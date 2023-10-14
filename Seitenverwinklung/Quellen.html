@@ -6,7 +6,7 @@
       <title>Alkohol im Straßenverkehr</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body onload="onload()">
+    <body class="darkmode">
       <nav class="navbar">
         <div class="brand-title"><img src="/Images/HomeBtn.png" onclick="window.location.href='../index.html';" alt="" id="HomeBtn"></div>
         <a href="#" class="toggle-button">
@@ -50,17 +50,21 @@
         })
         function  toggledarkmode() {
     let actualTheme = body.className;
-    localStorage.setItem("theme", actualTheme);
+    console.log(sessionStorage)
+    
+    sessionStorage.setItem("theme", actualTheme);
+    console.log("1")
     body.classList.toggle("darkmode")
+    console.log("2")
+    
   }
  
 
-  function onload() {
-     if (localStorage.getItem("theme"))
-        body.classList.toggle(localStorage.getItem("theme"));
   
-  }
-
+    
+     if (sessionStorage.getItem("theme")) 
+       body.classList.toggle(sessionStorage.getItem("theme"));
+      
       </script>
     </body>
 </html>
