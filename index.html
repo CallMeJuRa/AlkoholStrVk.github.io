@@ -112,9 +112,9 @@
 
   function  toggledarkmode() {
     let actualTheme = body.className;
-    console.log(sessionStorage)
+    console.log(localStorage)
     
-    sessionStorage.setItem("theme", actualTheme);
+    localStorage.setItem("theme", actualTheme);
     console.log("1")
     body.classList.toggle("darkmode")
     console.log("2")
@@ -125,7 +125,7 @@
   
     
      if (sessionStorage.getItem("theme")) 
-       body.classList.toggle(sessionStorage.getItem("theme"));
+       body.classList.toggle(localStorage.getItem("theme"));
       
        
 
