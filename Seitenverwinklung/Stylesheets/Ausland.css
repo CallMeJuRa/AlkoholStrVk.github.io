@@ -94,9 +94,25 @@ body {
         width: 100%;
         background-color: #333;
         height: 5vh;
-        position: absolute;
-        top: 100vh;
+        position: relative;
+        top: 88vh;
+        display: flex;
 
+      }
+
+
+      .darkmodebtn {
+        width: 3.5vh;
+        align-items: center;
+      }
+
+
+      .darkmodebtn:hover {
+        filter: invert(1);
+      }
+
+      .darkmode {
+        background-color: #222222;
       }
 
 @media (max-width: 1000px) {
@@ -134,9 +150,11 @@ body {
 footer {
   width: 100%;
   background-color: #333;
-  height: 2vh;
+  height: 3vh;
   position: absolute;
  
 }
-
+.darkmodebtn {
+    height: 1rem;
+}
 }

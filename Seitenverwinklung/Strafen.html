@@ -5,7 +5,7 @@
       <title>Alkohol im Straßenverkehr</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
+    <body onload="onload()">
       <nav class="navbar">
         <div class="brand-title"><img src="/Images/HomeBtn.png" onclick="window.location.href='../index.html';" alt="" id="HomeBtn"></div>
         <a href="#" class="toggle-button">
@@ -27,14 +27,13 @@
     
       <div class="main">
         <div class="part" id="part1">
-            <h1>Deutschland</h1>
+            <h1> <a href="#" class="link">Deutschland</a></h1>
             <div class="txt"> &#8226; Verstoß gegen 0,5 Promille: <br>
               1te Mal: Bußgeld: 528,50€; Fahrverbot: 1 Monat <br>
               2te Mal: Bußgeld: 1053,50€; Fahrverbot: 3 Monate  <br>
               3te Mal: Bußgeld: 1578,50€; Fahrverbot: 3 Monate  <br>
           Gefährdung des Straßenverkehrs (ab 0,3) oder BAK ab 1,1: Entziehung des Führerscheins (mindestens 6 Monate); Freiheitsstrafe oder Geldstrafe
-          <br><br>
-          Geldstrafe oder bis ein Jahr haps
+          
             </div>
         </div>
 
@@ -43,16 +42,22 @@
         
 
         <div class="part" id="part2">
-           EU-Weit
+          <h1><a href="#" class="link">EU-Weit</a></h1>
+          <div class="txt">
+
+          </div>
         </div>
-
-
         <div class="part" id="part3">
-          AMERIKA
+         <h1><a href="#" class="link">AMERIKA</a></h1> 
+         <div class="txt">
+
+         </div>
         </div>
-          
         <div class="part" id="part4">
-            Andere Länder
+            <h1><a href="#" class="link">Andere Länder</a></h1>
+            <div class="txt">
+
+            </div>
         </div>
 
       </div>
@@ -63,9 +68,13 @@
 
 
   
+      <footer>
+        <img src="/Images/Moon.png" alt="" class="darkmodebtn" onclick="toggledarkmode()">
+       </footer>
   
     
       <script>
+        const body = document.body
         const toggleButton = document.getElementsByClassName('toggle-button')[0]
     const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
@@ -73,7 +82,18 @@
   navbarLinks.classList.toggle('active')
         })
 
+        function  toggledarkmode() {
+    let actualTheme = body.className;
+    localStorage.setItem("theme", actualTheme);
+    body.classList.toggle("darkmode")
+  }
+ 
 
+  function onload() {
+     if (localStorage.getItem("theme"))
+        body.classList.toggle(localStorage.getItem("theme"));
+  
+  }
       </script>
 
 

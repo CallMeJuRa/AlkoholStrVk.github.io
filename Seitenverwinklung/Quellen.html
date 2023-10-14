@@ -6,7 +6,7 @@
       <title>Alkohol im Straßenverkehr</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
+    <body onload="onload()">
       <nav class="navbar">
         <div class="brand-title"><img src="/Images/HomeBtn.png" onclick="window.location.href='../index.html';" alt="" id="HomeBtn"></div>
         <a href="#" class="toggle-button">
@@ -35,18 +35,31 @@
        </h1> 
 
   
-     <footer>
-
-     </footer>
+    
+       <footer>
+        <img src="/Images/Moon.png" alt="" class="darkmodebtn" onclick="toggledarkmode()">
+       </footer>
     
       <script>
+        const body = document.body
         const toggleButton = document.getElementsByClassName('toggle-button')[0]
     const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
   toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
         })
+        function  toggledarkmode() {
+    let actualTheme = body.className;
+    localStorage.setItem("theme", actualTheme);
+    body.classList.toggle("darkmode")
+  }
+ 
 
+  function onload() {
+     if (localStorage.getItem("theme"))
+        body.classList.toggle(localStorage.getItem("theme"));
+  
+  }
 
       </script>
     </body>

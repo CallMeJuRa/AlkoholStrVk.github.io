@@ -122,18 +122,35 @@ body {
     }
 
     .link {
-        color: #A600FF;
+        color: #ff00ff;
     }
        
 
 
-      footer {
+    footer {
         width: 100%;
         background-color: #333;
         height: 5vh;
-        position: absolute;
-        bottom: 0;
-        
+        position: relative;
+        top: 88vh;
+        display: flex;
+
+      }
+
+
+      .darkmodebtn {
+        width: 3.5vh;
+        align-items: center;
+      }
+
+
+      .darkmodebtn:hover {
+        filter: invert(1);
+      }
+
+      .darkmode {
+        background-color: #222222;
+        color: #ffffff;
       }
 
 @media (max-width: 1000px) {
@@ -167,17 +184,111 @@ body {
     .navbar-links.active {
         display: flex;
     }
+
+    .main {
+        width: 75%;
+        height: 50%;
+        background-color: #333;
+        position: absolute;
+        top: 5vh;
+        left: 2.5vh;
+        display: block;
+        color: aliceblue;
+    }
+    
+          
+        .part {
+            size: absolute;
+            width: 100%;
+            height: 33.33%;
+            outline: 3px solid purple;
+            padding: 1vh;
+            line-height: 1.1rem;
+    
+        }
+        h1 {
+            position: relative;
+            top: 0;
+                left: 5%;
+            font-size: 1.6rem;
+            text-align: center;
+            line-height: 1.5rem;
+         }
+         .txt {
+             padding-left: 1vh;
+             margin: 0;
+            font-size: 1rem;
+            
+         }
     
 footer {
   width: 100%;
   background-color: #333;
   height: 2vh;
-  position: relative;
+  position: absolute;
+  top: 120vh;
  
 }
 .main {
   
     position: relative;
 
+
+
+
+
+
 }
 }
+
+@media (max-width: 1500px) { 
+    .main {
+        width: 85%;
+        height: 65%;
+        background-color: #333;
+        position: absolute;
+        top: 15vh;
+        left: 15vh;
+        display: flex;
+        color: aliceblue;
+    }
+    
+          
+        .part {
+            width: 33.3333%;
+            height: 100%;
+            outline: 3px solid purple;
+            
+            
+           
+        }
+        
+    h1 {
+       position: relative;
+       
+       left: 15%;
+       font-size: 1.5rem;
+    }
+    .txt {
+        padding-left: 1vh;
+        margin: 0;
+       font-size: 1rem;
+    }
+    footer {
+        width: 100%;
+        background-color: #333;
+        height: 5vh;
+        position: relative;
+        top: 87vh;
+        display: flex;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+      color: #eee;
+      background: #121212;
+    }
+  
+    
+  }

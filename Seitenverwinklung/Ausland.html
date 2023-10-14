@@ -5,7 +5,7 @@
       <title>Alkohol im Straßenverkehr</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
-    <body>
+    <body onload="onload()">
       <nav class="navbar">
         <div class="brand-title"><img src="/Images/HomeBtn.png" onclick="window.location.href='../index.html';" alt="" id="HomeBtn"></div>
         <a href="#" class="toggle-button">
@@ -23,47 +23,38 @@
           </ul>
         </div>
       </nav>
-    <h1>Ausland</h1>
-    <ul>
-        <li>Polen: 
-            <ul>
-                <li>0,2 Promille</li>
-            </ul>
-        </li>
-        <li>USA: 
-            <ul>
-                <li>0,8 Promille offiziell, jedoch kann man unter der Grenze bestraft werden (diese Grenze dient als Abgrenzung zwischen leichter und schwerer Verbrechen)</li>
-                <li>Alkoholverbot unter 21-Jährigen (man darf schon ab 16 Auto fahren)</li>
-                <li>0,0 Promillegrenze für Fahranfänger und Mopedfahrer</li>
-            </ul>
-        </li>
-        <li>Tschechien: 
-            <ul>
-                <li>0,0 Promille</li>
-            </ul>
-        </li>
-        <li>Indonesien: 
-            <ul>
-                <li>Es gibt keine Promillegrenze (wegen religiösen Gründen (ist ein islamischer Staat, also trinken Bürger generell kein Alkohol))</li>
-                <li>Haftstrafe, wenn man unter Alkoholeinfluss einen Unfall baut</li>
-            </ul>
-        </li>
-    </ul>  
+
+    
 
 
   
-     <footer>
-
-     </footer>
+  
+      <footer>
+        <img src="/Images/Moon.png" alt="" class="darkmodebtn" onclick="toggledarkmode()">
+       </footer>
     
       <script>
+        const body = document.body
         const toggleButton = document.getElementsByClassName('toggle-button')[0]
     const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
   toggleButton.addEventListener('click', () => {
   navbarLinks.classList.toggle('active')
         })
+        function  toggledarkmode() {
+    let actualTheme = body.className;
+    localStorage.setItem("theme", actualTheme);
+    body.classList.toggle("darkmode")
+    console.log('Storage gespeichert')
+  }
+ 
 
+  function onload() {
+     if (localStorage.getItem("theme"))
+        body.classList.toggle(localStorage.getItem("theme"));
+      console.log("Storage geladen")
+  
+  }
 
       </script>
     </body>

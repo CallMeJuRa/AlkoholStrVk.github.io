@@ -12,7 +12,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background-color: #eee;
 }
 
 .navbar {
@@ -169,6 +169,11 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
           transform:   rotate(0deg);
         }
       }
+
+
+
+
+
       
       
       #strafen:hover {
@@ -283,7 +288,23 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
         height: 5vh;
         position: relative;
         top: 55.3vh;
+        display: flex;
 
+      }
+
+
+      .darkmodebtn {
+        width: 3.5vh;
+        align-items: center;
+      }
+
+
+      .darkmodebtn:hover {
+        filter: invert(1);
+      }
+
+      .darkmode {
+        background-color: #222222;
       }
 
 @media (max-width: 1000px) {
@@ -355,7 +376,8 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
 
 #circle2 {
   position: relative;
-  left: 30vh;
+  left: 25vh;
+  top: 2vh;
   background-image: url(Images/Gefägnis.png);
   background-position-x: center;
   background-position-y: center;
@@ -366,7 +388,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
 
   position: relative;
   left: 5vh;
-  top: 1vh;
+  top: 4vh;
   background-image: url(Images/Ausland.png);
   background-repeat: no-repeat;
   background-position-x: center;
@@ -376,8 +398,8 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
 
 #circle4 {
   position: relative;
-  left: 30vh;
-  top: 1vh;
+  left: 25vh;
+  top: 6vh;
   background-image: url(Images/Uhr.png);
   background-repeat: no-repeat;
   background-position-x: center;
@@ -389,7 +411,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
 #circle5 {
   position: relative;
   left: 5vh;
-  top: 1vh;
+  top: 7vh;
   background-image: url(Images/Formel.png);
   background-repeat: no-repeat;
   background-position-x: center;
@@ -403,7 +425,160 @@ footer {
   background-color: #333;
   height: 2vh;
   position: relative;
+  top: 15vh;
  
 }
+
+}
+
+@media (max-width: 1500px) {
+  .circle {
+    width: 24vh;
+    height: 24vh;
+    background-color: #823ca6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-color: #000000;
+    left: 5vh;
+   border: 2vh;
+    -webkit-box-shadow:0px 0px 75px 25px rgba(170,0,255,1);
+-moz-box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
+box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
+    
+  }
+
+  .circle:hover {
+    background-color: #713391 ;
+    transition: all 0.3s ease 0s;
+  }
+   
+  .circle:hover #text {
+    color: rgb(231, 226, 226);
+  
+  }
+  #text {
+    font-family: 'Dela Gothic One', cursive;
+    color: #ffffff;
+    font-size: 1.6em;
+    animation: animate 20s linear infinite;
+    letter-spacing: 0.2vh;
+    position: sticky;
+
+    
+  }
+
+  
+
+  #text:hover {
+    color: rgb(231, 226, 226);
+  }
+  
+  #strafen {
+    font-family: 'Dela Gothic One', cursive;
+    color: #ffffff;
+    font-size: 2em;
+    animation: animate 20s linear infinite;
+    letter-spacing: 0.2vh;
+    position: fixed;
+  }
+  
+ 
+
+
+
+
+  
+  
+  #strafen:hover {
+    color: rgb(231, 226, 226);
+  }
+  
+  #circle2 {
+    position: fixed;
+    left: 32vh;
+    top: 50vh;
+    background-image: url(Images/Gefägnis.png);
+    
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 45%;
+  
+  }
+  
+  #circle3 {
+    position: fixed;
+    left: 59vh;
+    top: 22vh;
+    background-image: url(Images/Ausland.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 75%;
+  
+  }
+  
+  #ausland {
+    font-family: 'Dela Gothic One', cursive;
+    color: #ffffff;
+    font-size: 2.8em;
+    animation: animate 20s linear infinite;
+    letter-spacing: 0.2vh;
+    position: fixed;
+  }
+  
+  
+  #circle4 {
+    position: fixed;
+    left: 81vh;
+    top: 50vh;
+    background-image: url(Images/Uhr.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 75%;
+  
+  }
+  
+  #früher {
+    font-family: 'Dela Gothic One', cursive;
+    color: #ffffff;
+    font-size: 2.5em;
+    animation: animate 20s linear infinite;
+    letter-spacing: 0.2vh;
+    position: fixed;
+  }
+  
+  
+  #circle5 {
+    position: fixed;
+    left: 99vh;
+    top: 22vh;
+    background-image: url(Images/Formel.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: 75%;
+  
+  }
+  
+  #rechner {
+    font-family: 'Dela Gothic One', cursive;
+    color: #ffffff;
+    font-size: 1.5em;
+    animation: animate 20s linear infinite;
+    letter-spacing: 0.2vh;
+    position: fixed;
+  }
+
+  footer {
+    width: 100%;
+    background-color: #333;
+    height: 2vh;
+    position: relative;
+    top: 64.3vh;
+   
+  }
 
 }

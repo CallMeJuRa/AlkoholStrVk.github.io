@@ -92,7 +92,7 @@ body {
 
 .main {
     width: 85%;
-    height: 75%;
+    height: 40%;
     background-color: #333;
     position: absolute;
     top: 15vh;
@@ -105,32 +105,48 @@ body {
     .part {
         width: 25%;
         height: 100%;
+        outline: 3px solid purple;
 
     }
-    #part1 {
-        background-color: black;
-    }
-
-    #part2 {
-        background-color: aqua;
-    }
-    #part3 {
-        background-color: firebrick;
-        
-    }
-
-    #part4 {
-        background-color: goldenrod;
-    }
+    h1 {
+        position: relative;
+        top: 0;
+        left: 25%;
+        font-size: 2.25rem;
+     }
+     .txt {
+         padding-left: 1vh;
+         margin: 0;
+        font-size: 1.4rem;
+     }
+ 
+     .link {
+         color: #ea00ff;
+     }
       
-      footer {
+    footer {
         width: 100%;
         background-color: #333;
-        height: 5vh;
-        position: absolute;
-        top: 100vh;
+        height: 3vh;
+        position: relative;
+        top: 85vh;
+        display: flex;
+
+      }
 
 
+      .darkmodebtn {
+        width: 3.5vh;
+        align-items: center;
+      }
+
+
+      .darkmodebtn:hover {
+        filter: invert(1);
+      }
+
+      .darkmode {
+        background-color: #222222;
       }
 
 @media (max-width: 1000px) {
@@ -165,12 +181,118 @@ body {
         display: flex;
     }
     
+    .main {
+        width: 85%;
+        height: 75%;
+        background-color: #333;
+        position: absolute;
+        left: 3vh;
+        display: block;
+        color: aliceblue;
+    }
+    
+          
+        .part {
+
+            width: 100%;
+            height: 25%;
+            outline: 3px solid purple;
+            padding: 1vh;
+            line-height: 0.9rem;
+    
+        }
+        h1 {
+            position: relative;
+            top: 0;
+            left: 5%;
+            font-size: 1.5rem;
+            text-align: center;
+            line-height: 1.1rem;
+            margin: 1vh;
+            
+         }
+         .txt {
+             padding-left: 1vh;
+             margin: 0;
+            font-size: 0.8rem;
+            
+         }
+    
+
+
+
+
+
 footer {
   width: 100%;
   background-color: #333;
   height: 2vh;
-  position: relative;
- 
+  position: absolute;
+  top: 99vh;
+}
+.main {
+  
+    position: relative;
+
 }
 
 }
+
+@media (max-width: 1500px) { 
+    .main {
+        width: 85%;
+        height: 65%;
+        background-color: #333;
+        position: absolute;
+        top: 15vh;
+        left: 10vh;
+        display: flex;
+        color: aliceblue;
+    }
+    
+          
+        .part {
+            width: 33.3333%;
+            height: 100%;
+            outline: 3px solid purple;
+            
+            
+           
+        }
+        
+    h1 {
+       position: relative;
+       
+       left: 10%;
+       font-size: 1.5rem;
+    }
+    .txt {
+        padding-left: 1vh;
+        margin: 0;
+       font-size: 1rem;
+    }
+    footer {
+        width: 100%;
+        background-color: #333;
+        height: 2vh;
+        position: relative;
+        top: 88vh;
+        display: flex;
+    }
+    .darkmodebtn {
+        height: 100%;
+        box-sizing: content-box;
+        padding: 1;
+        position: absolute;
+      }
+}
+
+
+@media (prefers-color-scheme: dark) {
+    body {
+      color: #eee;
+      background: #121212;
+    }
+  
+    
+  }
