@@ -1,1 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Fredoka:wght@700&family=Inter:wght@400;500&family=Noto+Serif&family=PT+Serif&family=Roboto+Mono:wght@600&family=The+Nautigal&display=swap');
 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A600FF;
+    color: white;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    margin: .5rem;
+}
+
+.navbar-links {
+    height: 100%;
+}
+
+.navbar-links ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    list-style: none;
+    transition: all 0.3s ease 0s;
+}
+
+.navbar-links li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem;
+    font-size: 2vh;
+
+}
+
+.navbar-links li:hover {
+    background-color: #9500e6;
+}
+
+.toggle-button {
+    position: absolute;
+    top: 1vh;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#HomeBtn {
+    size-adjust: auto;
+    width: 7vh;
+    transition: all 0.3s ease 0s;
+    border: 0;
+}
+
+#HomeBtn:hover {
+    border-radius: 1vh;
+
+    filter: invert(1);
+}
+
+
+.main {
+    width: 85%;
+    height: 40%;
+    background-color: #333;
+    position: absolute;
+    top: 15vh;
+    left: 15vh;
+    display: flex;
+    color: aliceblue;
+}
+
+
+.part {
+    width: 33.3333333%;
+    height: 100%;
+    outline: 3px solid purple;
+
+
+
+}
+
+h1 {
+    position: relative;
+    top: 0;
+    left: 25%;
+    font-size: 2.25rem;
+}
+
+li {
+    padding-left: 1vh;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+a {
+    color: #ff00ff;
+}
+
+.txt {
+    padding-left: 1vh;
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.link {
+    color: #ff00ff;
+}
+
+
+
+footer {
+    width: 100%;
+    background-color: #333;
+    height: 5vh;
+    position: relative;
+    top: 88vh;
+    display: flex;
+
+}
+
+
+.darkmodebtn {
+    width: 3.5vh;
+    align-items: center;
+}
+
+
+.darkmodebtn:hover {
+    filter: invert(1);
+}
+
+.darkmode {
+    background-color: #eee;
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .toggle-button {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar-links ul {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navbar-links ul li {
+        text-align: center;
+    }
+
+    .navbar-links ul li a {
+        padding: .5rem 1rem;
+    }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .main {
+        width: 75%;
+        height: 50%;
+        background-color: #333;
+        position: absolute;
+        top: 5vh;
+        left: 2.5vh;
+        display: block;
+        color: aliceblue;
+    }
+
+
+    .part {
+        size: absolute;
+        width: 100%;
+        height: 33.33%;
+        outline: 3px solid purple;
+        padding: 1vh;
+        line-height: 1.1rem;
+
+    }
+
+    h1 {
+        position: relative;
+        top: 0;
+        left: 5%;
+        font-size: 1.6rem;
+        text-align: center;
+        line-height: 1.5rem;
+    }
+
+    .txt {
+        padding-left: 1vh;
+        margin: 0;
+        font-size: 1rem;
+
+    }
+
+    footer {
+        width: 100%;
+        background-color: #333;
+        height: 2vh;
+        position: absolute;
+        top: 120vh;
+
+    }
+
+    .main {
+
+        position: relative;
+
+
+
+
+
+
+    }
+}
+
+@media all and (min-width: 1000px) and (max-width: 1500px) {
+    .main {
+        width: 85%;
+        height: 65%;
+        background-color: #333;
+        position: absolute;
+        top: 15vh;
+        left: 15vh;
+        display: flex;
+        color: aliceblue;
+    }
+
+
+    .part {
+        width: 33.3333%;
+        height: 100%;
+        outline: 3px solid purple;
+
+
+
+    }
+
+    h1 {
+        position: relative;
+
+        left: 4%;
+        font-size: 1.5rem;
+    }
+
+    .txt {
+        padding-left: 1vh;
+        margin: 0;
+        font-size: 1rem;
+    }
+
+    footer {
+        width: 100%;
+        background-color: #333;
+        height: 5vh;
+        position: relative;
+        top: 87vh;
+        display: flex;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        color: #eee;
+        background: #222222;
+    }
+
+
+}
