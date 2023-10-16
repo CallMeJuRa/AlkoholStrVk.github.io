@@ -249,7 +249,7 @@ footer {
 @media all and (min-width: 1000px) and (max-width: 1500px) {
     .main {
         width: 90%;
-        height: 90%;
+        height: 95%;
         background-color: #333;
         position: absolute;
         top: 15vh;
@@ -286,7 +286,7 @@ footer {
         background-color: #333;
         height: 5vh;
         position: relative;
-        top: 87vh;
+        top: 90vh;
         display: flex;
     }
 }
