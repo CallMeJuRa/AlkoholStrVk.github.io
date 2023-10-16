@@ -248,7 +248,7 @@ footer {
 @media all and (min-width: 1000px) and (max-width: 1500px) {
     .main {
         width: 88%;
-        height: 120%;
+        height: 140%;
         background-color: #333;
         position: absolute;
         top: 15vh;
