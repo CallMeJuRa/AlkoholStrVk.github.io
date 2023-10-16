@@ -296,3 +296,15 @@ footer {
   
     
   }
+
+  @media all and (width: 375px) and (height: 667px) {
+
+    footer {
+        width: 100%;
+        background-color: #333;
+        height: 3vh;
+        position: relative;
+        top: 45vh;
+        display: flex;
+    }
+}
