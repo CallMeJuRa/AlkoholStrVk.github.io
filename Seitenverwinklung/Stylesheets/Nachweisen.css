@@ -111,6 +111,16 @@ body {
 
 }
 
+.ethylglucuronid_div {
+    align-items: center;
+    display: flex;
+}
+.ethylglucuronid_img {
+    filter: invert(1);
+    width: 20vh;
+    height: 20vh;
+}
+
 h1 {
     position: relative;
     top: 0;
