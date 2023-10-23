@@ -131,6 +131,7 @@ div {
         padding-bottom: 2pt;
         padding-left: 2pt;
         padding-right: 2pt;
+        transition: all 0.3s ease 0s;
       }
 
 .darkmodeBtnInv:hover {
