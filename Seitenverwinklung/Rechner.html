@@ -28,7 +28,7 @@
         </nav>
   
 
-  <div class="calc">
+ <div class="darkmodeInverse" id="darkmodeInverse">
     <p><b>Gebe Daten an</b></p>
     <form>
       <label for="alkoholEinnahme">Einnahme von Alkohol in Gramm: </label>
@@ -40,9 +40,11 @@
     </form>
 
     <p id="ergebnis">Ergebnis: ___&#8240</p>
-  </div>
-  <div id="box" onclick="return calcBAC(alkoholEinnahme, körpergewicht)">Berechnen</div>
-  <div class="txt">
+    
+    <div id="button" class="button">
+      <span class="darkmodeBtnInv" id="darkmodeBtnInv" onclick="return calcBAC(alkoholEinnahme, körpergewicht)">Berechnen</span>
+    </div>
+
     <p>Für die Formel, um die Alkoholkonzentration zu kalkulieren, gilt A&div;(G &sdot; r). „A“ steht für Alkoholgehalt in g, „G“ steht für Körpergewicht in kg und „r“ steht für Resorptionsfaktor (ist bei Frauen und Männer automatisch angegeben). Für Frauen liegt sie bei 0,6 und für Männer bei 0,7.</p>
     <p>Wenn Sie nicht wissen, wie man Alkohol in Gramm von z.B. einer Flasche Bier berechnen, hier gibt es eine Formel dafür: M &sdot; (V% &div; 100) &sdot; 0,8. „M“ steht für Menge des Getränks in ml und „V%“ steht für Volumengehalt von Alkohol in Prozent.</p>
   </div>
@@ -53,7 +55,7 @@
    </footer>
 </body>
 <script>
-const body = document.body
+ const body = document.body
 
   function calcBAC(konz, gewicht) {
     var mod = 0
@@ -85,35 +87,41 @@ const body = document.body
     document.getElementById("ergebnis").innerHTML = "Ergebnis: "+String(Math.round(calc*100)/100)+"&#8240"
     return calc
   }
-    
-  
 
-  
-
+  /* DARKMODE BUTTON */
 
   const toggleButton = document.getElementsByClassName('toggle-button')[0]
-    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+  const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
   toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
-        })
+    navbarLinks.classList.toggle('active')
+  })
 
-        function  toggledarkmode() {
+  function  toggledarkmode() {
     let actualTheme = body.className;
+    let actualITheme = document.getElementById("darkmodeInverse").className
+    console.log(actualITheme)
     console.log(sessionStorage)
     
     sessionStorage.setItem("theme", actualTheme);
+    sessionStorage.setItem("itheme", actualITheme);
     console.log("1")
     body.classList.toggle("darkmode")
+    document.getElementById("darkmodeInverse").classList.toggle("darkmodeInverse")
     console.log("2")
-    
   }
  
 
   
     
-     if (sessionStorage.getItem("theme")) 
-       body.classList.toggle(sessionStorage.getItem("theme"));
-      
-</script>
+  if (sessionStorage.getItem("theme")) 
+  body.classList.toggle(sessionStorage.getItem("theme"));
+  if (sessionStorage.getItem("theme") == "darkmode") {
+    console.log("ay")
+    document.getElementById("darkmodeInverse").classList.remove("darkmodeInverse")
+  } else {
+    console.log("nay")
+    document.getElementById("darkmodeInverse").classList.add("darkmodeInverse")
+  }
+  </script>
 </html>
