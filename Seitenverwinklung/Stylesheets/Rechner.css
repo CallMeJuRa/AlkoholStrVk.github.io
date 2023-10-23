@@ -24,6 +24,10 @@ body {
     color: white;
 }
 
+div {
+    color: #eee;
+}
+
 .brand-title {
     font-size: 1.5rem;
     margin: .5rem;
@@ -115,6 +119,25 @@ body {
         background-color: #eee;
       }
 
+      .darkmodeInverse {
+        color: #000;
+      }
+
+      .darkmodeBtnInv {
+        background-color: blueviolet;
+        font-size: 16pt;
+        margin: 1vh;
+        padding-top: 2pt;
+        padding-bottom: 2pt;
+        padding-left: 2pt;
+        padding-right: 2pt;
+      }
+
+.darkmodeBtnInv:hover {
+    filter: brightness(1.1) ;
+}
+
+
 @media (max-width: 1000px) {
     .navbar {
         flex-direction: column;
@@ -155,16 +178,4 @@ footer {
  
 }
 
-}
-
-@media all and (width: 375px) and (height: 667px) {
-
-    footer {
-        width: 100%;
-        background-color: #333;
-        height: 5vh;
-        position: relative;
-        top: 30vh;
-        display: flex;
-    }
 }
