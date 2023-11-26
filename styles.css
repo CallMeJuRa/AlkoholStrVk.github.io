@@ -88,7 +88,7 @@ body {
       }
 
       #circle1 {
-        background-image: url(Images/Paragraph.png) !important;
+        background-image: url(/Images/Paragraph.png) !important;
         
         background-repeat: no-repeat;
         background-position-x: center;
@@ -183,7 +183,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
       #circle2 {
         position: fixed;
         left: 40vh;
-        background-image: url(Images/Gefägnis.png);
+        background-image: url(/Images/Gefägnis.png);
         
         background-position-x: center;
         background-position-y: center;
@@ -195,7 +195,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
         position: fixed;
         left: 75vh;
         top: 20vh;
-        background-image: url(Images/Ausland.png);
+        background-image: url(/Images/Ausland.png);
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
@@ -224,7 +224,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
         position: fixed;
         left: 110vh;
         
-        background-image: url(Images/Uhr.png);
+        background-image: url(/Images/Uhr.png);
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
@@ -254,7 +254,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
         position: fixed;
         left: 145vh;
         top: 20vh;
-        background-image: url(Images/Formel.png);
+        background-image: url(/Images/Formel.png);
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
