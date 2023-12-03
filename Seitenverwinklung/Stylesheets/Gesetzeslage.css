@@ -11,9 +11,17 @@
 
 body {
     margin: 0;
-    padding: 0;
-    background-color: #222222;
-}
+       padding: 0;
+       background-color: #222222;
+       -ms-overflow-style: none; /* for Internet Explorer, Edge */
+     scrollbar-width: none; /* for Firefox */
+     overflow-y: scroll; 
+   }
+   
+   body::-webkit-scrollbar {
+     display: none; /* for Chrome, Safari, and Opera */
+           
+   }
 
 .navbar {
     display: flex;
@@ -131,18 +139,18 @@ body {
     footer {
         width: 100%;
         background-color: #333;
-        height: 5vh;
+        height: 3vh;
         position: relative;
-        top: 88vh;
+        top: 88.3vh;
         display: flex;
-
-      }
-
-
-      .darkmodebtn {
-        width: 3.5vh;
+    
+    }
+    
+    
+    .darkmodebtn {
+        width: 3vh;
         align-items: center;
-      }
+    }
 
 
       .darkmodebtn:hover {

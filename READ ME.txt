@@ -1,0 +1,28 @@
+Guten Tag, geehrter Leser*innen.
+
+Ich bin ein junger Schüler. Bezüglich Coden bin ich relativ unerfahren. Kleinere Projekte wie ein Taschenrechner, Snake Spiel oder kleinere Websiten hab ich zwar erschaffen, jedoch ist diese Seite ein anderes Kaliber.
+Hilfsmittel, wie Circletype oder Media Query bei CSS hab ich hier das erste Mal wirklich angewandt.
+
+
+Vieles hab ich alleine gemacht und bei manchen Sachen musste ich googlen.
+Es können *VIELE* Fehler aufkommen. Ich versuchte vieles schon zu verhindern... 
+Bekannte "bugs" oder Fehlprogrammierungen:
+
+• Mond stretched sich (darkmode btn) (fixed)
+• Quellen nicht vernünftig 
+• Alkoholrechner nicht angepasst
+• Quiz ist noch nicht im Projekt selber
+• Ausland.html nicht vernünftig (Seite lässt sich zur Seite und Oben scrollen/swipen)   (fixed)
+• Bei der Homepage muss man erst einmal aktuallsieren
+• Früher.html hat, bei anderen Displaygrößen, immer noch 3 Kästchen, statt ein Großes (fixed)
+• Navbar bei Früher zeigt immer noch "Frühere Zeiten" an  
+• Das Quiz hat einen falschen Titel 
+
+Falls keiner dieser Punkte mehr zutreffen, hab ich es wohl geschaft 
+
+Bei bedarf können Sie, geehrter Leser, mich gerne Kontaktieren.
+Über Hilfe und Verbesserungen wäre ich auch sehr froh.
+E-Mail: julianczarnecki621@gmail.com
+
+Mfg.
+Julian C.

@@ -3,14 +3,14 @@
     <head>
       <link rel="stylesheet" href="styles.css">
       <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-      <script src="jquery.lettering.js"></script>
-      <script src="circletype.min.js "></script>
+      <script src="jquery.lettering.js"></script> <!-- Für den runden Text -->
+      <script src="circletype.min.js "></script>  <!-- Für die Kreise-->
       <title>Alkohol im Straßenverkehr</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body class="darkmode">
       <nav class="navbar">
-        <div class="brand-title"><img src="Images/HomeBtn.png" onclick="window.location.href='index.html';" alt="" id="HomeBtn"></div>
+        <div class="brand-title"><img src="/Images/HomeBtn.png" onclick="window.location.href='index.html';" alt="" id="HomeBtn"></div>
         <a href="#" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -18,11 +18,12 @@
         </a>
         <div class="navbar-links">
           <ul>
-            <li><a href="Seitenverwinklung/Gesetzteslage.html">Gesetzeslage</a></li>
-            <li><a href="Seitenverwinklung/Strafen.html">Strafen</a></li>
-            <li><a href="Seitenverwinklung/Ausland.html">Ausland</a></li>
-            <li><a href="Seitenverwinklung/Nachweisen.html">Nachweis</a></li>
-            <li><a href="Seitenverwinklung/Quellen.html">Quellen</a></li>
+            <li><a href="/Seitenverwinklung/Gesetzteslage.html">Gesetzeslage</a></li>  
+            <li><a href="/Seitenverwinklung/Strafen.html">Strafen</a></li>
+            <li><a href="/Seitenverwinklung/Ausland.html">Ausland</a></li>
+            <li><a href="/Seitenverwinklung/Nachweisen.html">Nachweis</a></li>
+            <li><a href="https://callmejura.github.io/Alkoholquiz.GitHub.io/">Quiz</a></li>
+            <li><a href="/Seitenverwinklung/Quellen.html">Quellen</a></li>
           </ul>
         </div>
       </nav>
@@ -69,7 +70,7 @@
         
       
 
-        const body = document.body
+        const body = document.body    
         const toggleButton = document.getElementsByClassName('toggle-button')[0]
     const navbarLinks = document.getElementsByClassName('navbar-links')[0]
     
@@ -78,7 +79,7 @@
   navbarLinks.classList.toggle('active')
         })
 
-        function Redirect(x) {
+        function Redirect(x) { //Für die Kreise 
     if (x === 1) {
       window.location.assign("../Seitenverwinklung/Gesetzteslage.html");
     }
@@ -118,14 +119,14 @@
     console.log("1")
     body.classList.toggle("darkmode")
     console.log("2")
-    
-  }
- 
+
+  }     // .darkmode ist direkt applied. Wenn man den button drückt wird der Tag .class entfernt und dadurch aktiviert sich darkmode
+
 
   
     
      if (sessionStorage.getItem("theme")) 
-       body.classList.toggle(sessionStorage.getItem("theme"));
+       body.classList.toggle(sessionStorage.getItem("theme"));    //sessionStorage, da ich keine Cookies machen wollte und localStorage nicht wirklich funktionierte.
       
        
 

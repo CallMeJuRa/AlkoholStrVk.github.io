@@ -11,9 +11,17 @@
 
 body {
     margin: 0;
-    padding: 0;
-    background-color: #222222;
-}
+       padding: 0;
+       background-color: #222222;
+       -ms-overflow-style: none; /* for Internet Explorer, Edge */
+     scrollbar-width: none; /* for Firefox */
+     overflow-y: scroll; 
+   }
+   
+   body::-webkit-scrollbar {
+     display: none; /* for Chrome, Safari, and Opera */
+           
+   }
 
 .navbar {
     display: flex;
@@ -22,6 +30,10 @@ body {
     align-items: center;
     background-color: #A600FF;
     color: white;
+}
+
+div {
+    color: #eee;
 }
 
 .brand-title {
@@ -93,16 +105,16 @@ body {
       footer {
         width: 100%;
         background-color: #333;
-        height: 5vh;
+        height: 3vh;
         position: relative;
-        top: 88vh;
+        top: 68vh;
         display: flex;
 
       }
 
 
       .darkmodebtn {
-        width: 3.5vh;
+        width: 3vh;
         align-items: center;
       }
 
@@ -114,6 +126,26 @@ body {
       .darkmode {
         background-color: #eee;
       }
+
+      .darkmodeInverse {
+        color: #000;
+      }
+
+      .darkmodeBtnInv {
+        background-color: blueviolet;
+        font-size: 16pt;
+        margin: 1vh;
+        padding-top: 2pt;
+        padding-bottom: 2pt;
+        padding-left: 2pt;
+        padding-right: 2pt;
+        transition: all 0.3s ease 0s;
+      }
+
+.darkmodeBtnInv:hover {
+    filter: brightness(1.1) ;
+}
+
 
 @media (max-width: 1000px) {
     .navbar {
@@ -155,16 +187,4 @@ footer {
  
 }
 
-}
-
-@media all and (width: 375px) and (height: 667px) {
-
-    footer {
-        width: 100%;
-        background-color: #333;
-        height: 5vh;
-        position: relative;
-        top: 30vh;
-        display: flex;
-    }
 }

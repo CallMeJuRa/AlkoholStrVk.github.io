@@ -11,9 +11,17 @@
 
 body {
     margin: 0;
-    padding: 0;
-    background-color: #222222;
-}
+       padding: 0;
+       background-color: #222222;
+       -ms-overflow-style: none; /* for Internet Explorer, Edge */
+     scrollbar-width: none; /* for Firefox */
+     overflow-y: scroll; 
+   }
+   
+   body::-webkit-scrollbar {
+     display: none; /* for Chrome, Safari, and Opera */
+           
+   }
 
 .navbar {
     display: flex;
@@ -111,6 +119,16 @@ body {
 
 }
 
+.ethylglucuronid_div {
+    align-items: center;
+    display: flex;
+}
+.ethylglucuronid_img {
+    filter: invert(1);
+    width: 20vh;
+    height: 20vh;
+}
+
 h1 {
     position: relative;
     top: 0;
@@ -133,16 +151,16 @@ h1 {
 footer {
     width: 100%;
     background-color: #333;
-    height: 5vh;
+    height: 3vh;
     position: relative;
-    top: 88vh;
+    top: 89vh;
     display: flex;
 
 }
 
 
 .darkmodebtn {
-    width: 3.5vh;
+    width: 3vh;
     align-items: center;
 }
 
@@ -249,7 +267,7 @@ footer {
 @media all and (min-width: 1000px) and (max-width: 1500px) {
     .main {
         width: 90%;
-        height: 80%;
+        height: 95%;
         background-color: #333;
         position: absolute;
         top: 15vh;
@@ -286,7 +304,7 @@ footer {
         background-color: #333;
         height: 5vh;
         position: relative;
-        top: 87vh;
+        top: 90vh;
         display: flex;
     }
 }

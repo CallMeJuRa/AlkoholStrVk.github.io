@@ -13,7 +13,17 @@ body {
     margin: 0;
     padding: 0;
     background-color: #222222;
-}
+
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+  }
+  
+  
+  body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+          
+  }
 
 .navbar {
     display: flex;
@@ -88,7 +98,7 @@ body {
       }
 
       #circle1 {
-        background-image: url(Images/Paragraph.png) !important;
+        background-image: url(/Images/Paragraph.png) !important;
         
         background-repeat: no-repeat;
         background-position-x: center;
@@ -183,7 +193,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
       #circle2 {
         position: fixed;
         left: 40vh;
-        background-image: url(Images/Gefägnis.png);
+        background-image: url(/Images/Gefägnis.png);
         
         background-position-x: center;
         background-position-y: center;
@@ -195,7 +205,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
         position: fixed;
         left: 75vh;
         top: 20vh;
-        background-image: url(Images/Ausland.png);
+        background-image: url(/Images/Ausland.png);
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
@@ -224,7 +234,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
         position: fixed;
         left: 110vh;
         
-        background-image: url(Images/Uhr.png);
+        background-image: url(/Images/Uhr.png);
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
@@ -254,7 +264,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
         position: fixed;
         left: 145vh;
         top: 20vh;
-        background-image: url(Images/Formel.png);
+        background-image: url(/Images/Formel.png);
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
@@ -285,16 +295,16 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
       footer {
         width: 100%;
         background-color: #333;
-        height: 5vh;
+        height: 3vh;
         position: relative;
-        top: 55.3vh;
+        top: 57.5vh;
         display: flex;
 
       }
 
 
       .darkmodebtn {
-        width: 3.5vh;
+        width: 3vh;
         align-items: center;
       }
 
@@ -378,7 +388,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
   position: relative;
   left: 25vh;
   top: 2vh;
-  background-image: url(Images/Gefägnis.png);
+  background-image: url( /Images/Gefägnis.png);
   background-position-x: center;
   background-position-y: center;
   background-size: 45%;
@@ -389,7 +399,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
   position: relative;
   left: 5vh;
   top: 4vh;
-  background-image: url(Images/Ausland.png);
+  background-image: url(/Images/Ausland.png);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -400,7 +410,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
   position: relative;
   left: 25vh;
   top: 6vh;
-  background-image: url(Images/Uhr.png);
+  background-image: url(/Images/Uhr.png);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -412,7 +422,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
   position: relative;
   left: 5vh;
   top: 7vh;
-  background-image: url(Images/Formel.png);
+  background-image: url(/Images/Formel.png);
   background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: center;
@@ -502,7 +512,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
     position: fixed;
     left: 32vh;
     top: 50vh;
-    background-image: url(Images/Gefägnis.png);
+    background-image: url(/Images/Gefägnis.png);
     
     background-position-x: center;
     background-position-y: center;
@@ -514,7 +524,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
     position: fixed;
     left: 59vh;
     top: 22vh;
-    background-image: url(Images/Ausland.png);
+    background-image: url(/Images/Ausland.png);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
@@ -536,7 +546,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
     position: fixed;
     left: 81vh;
     top: 50vh;
-    background-image: url(Images/Uhr.png);
+    background-image: url(/Images/Uhr.png);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;
@@ -558,7 +568,7 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
     position: fixed;
     left: 99vh;
     top: 22vh;
-    background-image: url(Images/Formel.png);
+    background-image: url(/Images/Formel.png);
     background-repeat: no-repeat;
     background-position-x: center;
     background-position-y: center;

@@ -10,9 +10,17 @@
 }
 
 body {
-    margin: 0;
+ margin: 0;
     padding: 0;
     background-color: #222222;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll; 
+}
+
+body::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+        
 }
 
 .navbar {
@@ -124,21 +132,23 @@ body {
          color: #ea00ff;
      }
       
-    footer {
+    
+     footer {
         width: 100%;
         background-color: #333;
         height: 3vh;
         position: relative;
-        top: 86vh;
+        top: 88vh;
         display: flex;
 
       }
 
 
       .darkmodebtn {
-        width: 3.5vh;
+        width: 3vh;
         align-items: center;
       }
+
 
 
       .darkmodebtn:hover {
@@ -149,7 +159,7 @@ body {
         background-color: #eee;
       }
 
-@media (max-width: 1000px) {
+@media all and (max-width: 1000px) {
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -228,7 +238,7 @@ footer {
   background-color: #333;
   height: 2vh;
   position: absolute;
-  top: 99vh;
+  top: 115vh;
 }
 .main {
   
@@ -240,7 +250,7 @@ footer {
 
 @media all and (min-width: 1000px) and (max-width: 1500px){ 
     .main {
-        width: 85%;
+        width: 88%;
         height: 65%;
         background-color: #333;
         position: absolute;
