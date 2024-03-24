@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link rel="stylesheet" href="styles.css">
+      <link rel="stylesheet" href="./styles.css">
       <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
       <script src="jquery.lettering.js"></script> <!-- Für den runden Text -->
       <script src="circletype.min.js "></script>  <!-- Für die Kreise-->
@@ -10,7 +10,7 @@
     </head>
     <body class="darkmode">
       <nav class="navbar">
-        <div class="brand-title"><img src="/Images/HomeBtn.png" onclick="window.location.href='index.html';" alt="" id="HomeBtn"></div>
+        <div class="brand-title"><img src="./Images/HomeBtn.png" onclick="window.location.href='index.html';" alt="" id="HomeBtn"></div>
         <a href="#" class="toggle-button">
           <span class="bar"></span>
           <span class="bar"></span>
@@ -19,15 +19,15 @@
         <div class="navbar-links">
           <ul>
 
-            <li><a href="Seitenverwinklung/Gesetzteslage.html">Gesetzeslage</a></li>  
+            <li><a href="./Seitenverwinklung/Gesetzteslage.html">Gesetzeslage</a></li>  
 
-            <li><a href="Seitenverwinklung/Gesetzteslage.html">Gesetzeslage</a></li>
+            <li><a href="./Seitenverwinklung/Gesetzteslage.html">Gesetzeslage</a></li>
 
-            <li><a href="Seitenverwinklung/Strafen.html">Strafen</a></li>
-            <li><a href="Seitenverwinklung/Ausland.html">Ausland</a></li>
-            <li><a href="Seitenverwinklung/Nachweisen.html">Nachweis</a></li>
-            <li><a href="https://callmejura.github.io/Alkoholquiz.GitHub.io/">Quiz</a></li>
-            <li><a href="Seitenverwinklung/Quellen.html">Quellen</a></li>
+            <li><a href="./Seitenverwinklung/Strafen.html">Strafen</a></li>
+            <li><a href="./Seitenverwinklung/Ausland.html">Ausland</a></li>
+            <li><a href="./Seitenverwinklung/Nachweisen.html">Nachweis</a></li>
+            <li><a href="-/https://callmejura.github.io/Alkoholquiz.GitHub.io/">Quiz</a></li>
+            <li><a href="./Seitenverwinklung/Quellen.html">Quellen</a></li>
           </ul>
         </div>
       </nav>
@@ -85,21 +85,21 @@
 
         function Redirect(x) { //Für die Kreise 
     if (x === 1) {
-      window.location.assign("/Seitenverwinklung/Gesetzteslage.html");
+      window.location.assign("./Seitenverwinklung/Gesetzteslage.html");
     }
 
     if (x === 2) {
-      window.location.assign("Seitenverwinklung/Strafen.html")
+      window.location.assign("./Seitenverwinklung/Strafen.html")
     }
 
     if (x === 3) {
       window.location.assign("./Seitenverwinklung/Ausland.html")
     }
     if (x === 4) {
-      window.location.assign("../Seitenverwinklung/Früher.html")
+      window.location.assign("./Seitenverwinklung/Früher.html")
     }
     if (x === 5) {
-      window.location.assign("../Seitenverwinklung/Rechner.html")
+      window.location.assign("./Seitenverwinklung/Rechner.html")
     }
 
   }
