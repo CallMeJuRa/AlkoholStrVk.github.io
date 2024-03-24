@@ -98,7 +98,7 @@ body {
       }
 
       #circle1 {
-        background-image: url(/Images/Paragraph.png) !important;
+        background-image: url(./Images/Paragraph.png) !important;
         
         background-repeat: no-repeat;
         background-position-x: center;
