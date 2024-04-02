@@ -296,8 +296,8 @@ box-shadow: 0px 0px 75px 25px rgba(170,0,255,1);
         width: 100%;
         background-color: #333;
         height: 3vh;
-        position: relative;
-        top: 57.5vh;
+        position: absolute;
+          bottom: 0;
         display: flex;
 
       }
