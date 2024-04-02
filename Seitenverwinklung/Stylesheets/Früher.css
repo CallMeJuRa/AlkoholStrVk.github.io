@@ -141,8 +141,8 @@ footer {
     width: 100%;
     background-color: #333;
     height: 3vh;
-    position: relative;
-    top: 89vh;
+   position: absolute;
+        bottom: 0;
     display: flex;
 
 }
@@ -236,8 +236,8 @@ footer {
         width: 100%;
         background-color: #333;
         height: 2vh;
-        position: absolute;
-        top: 120vh;
+         position: absolute;
+        bottom: 0;
 
     }
 
@@ -292,8 +292,8 @@ footer {
         width: 100%;
         background-color: #333;
         height: 5vh;
-        position: relative;
-        top: 87vh;
+         position: absolute;
+        bottom: 0;
         display: flex;
     }
 }
